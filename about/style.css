@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+/* ---------- Section 1 ---------- */
+
+.tr-aboutBody{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: bisque; */
+}
+
+/* ---------- First Row ---------- */
+
+/* .tr-firstrow{
+    background-color: rgba(51,3, 0, .1);
+} */
+.tr-first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 75vh;
+    /* background-color: brown; */
+    font-family: 'Rubik', sans-serif;
+    color: #333;
+}
+
+.first_img{
+    width: 500px;
+}
+
+.tr-title{
+    font-weight: 800;
+}
+
+.tr-title span{
+    color: #13a89e;
+}
+
+.tr-details{
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+}
+.projectname{
+    font-size: 24px;
+    font-weight: 800;
+    color: #13a89e
+}
+.tr-team{
+    font-size: 24px;
+    font-weight: 800;
+    color: #ff606e;
+}
+
+.rsxnvc-img{
+    width: 200px;
+}
+
+/* ---------- Second Row ---------- */
+
+/* .tr-stat{
+    background-color: rgb(0, 0, 0);
+} */
+
+.tr-statbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: #333;
+    
+    margin: 10px 0;
+
+}
+.tr-statbox_element{
+    padding: 20px;
+    height: 30vh;
+    width: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: 15px solid #ff606e; */
+    border-radius: 50%;
+    position: relative;
+    /* animation: spinBorder 3s linear; */
+}
+
+
+.border-animation {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    border: 15px solid transparent;
+    border-radius: 50%;
+    border-top-color: #ff606e;
+    animation: spinBorder 3s linear;
+    animation-fill-mode: forwards;
+    display: none;
+    background-color: transparent;
+}
+
+@keyframes spinBorder {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    border: 15px solid #ff606e;
+    }
+}
+
+.tr-statbox_element p{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+.number{
+    font-weight: 800;
+    font-size: 45px;
+    margin: 0;
+}
+
+/* ---------- Section 2 ---------- */
+
+.tr-advantages{
+    min-height: 100vh;
+    /* background-image: url(advantage.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tr-adtitle{
+    min-height: 15vh;
+    /* background-color: yellowgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tr-adtitle h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    color: #333;
+    margin: 0;
+}
+
+.tr-adtitle h1 span{
+    color: #13a89e;
+}
+
+
+.tr-featurebox{
+    min-height: 55vh;
+    /* background-color: brown; */
+    /* border: 3.2px solid var(--bg-color); */
+    border-radius: 32px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+    box-shadow: 0 1.6px 8px #333;
+    border-top: 9.6px solid #13a89e;
+    border-bottom: 9.6px solid #13a89e;
+    font-family: 'Rubik', sans-serif;
+    transform: translate(0, 50px);
+}
+.tr-featurebox_middle{
+    min-height: 55vh;
+    /* background-color: brown; */
+    /* border: 3.2px solid var(--bg-color); */
+    border-radius: 32px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+    box-shadow: 0 1.6px 8px #333;
+    border-top: 9.6px solid #13a89e;
+    border-bottom: 9.6px solid #13a89e;
+    font-family: 'Rubik', sans-serif;
+    transition: .5s; 
+}
+
+.a-title{
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-style: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    /* background-color: slategray; */
+}
+
+.lekha{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    color: #333;
+    align-items: center;
+    text-align: justify;
+    min-height: 40vh;
+    margin: 0;
+    padding: 20px;
+}

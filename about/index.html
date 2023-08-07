@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="style.css">
+
+    
+    <!-- icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <div class="tr-aboutBody">
+        <div class="container">
+            <div class="row tr-firstrow">
+                <div class="col-md-6 col-12">
+                    <div class="tr-first">
+                        <img src="1@4x.png" class="first_img">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="tr-first">
+                        <h1 class="tr-title">Welcome to <span>CR Mate</span></h1>
+                        <p class="tr-details">
+                            <span class="projectname">CR Mate</span> is a revolutionary platform developed by <span class="tr-team">Novochari</span> 
+                            dedicated to facilitating seamless communication between Class Representatives (CRs) and their fellow 
+                            classmates. Our mission is to empower CRs in universities and colleges with a user-friendly interface
+                            that allows them to share academic notices, club announcements, classroom codes, and study materials effortlessly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row tr-stat">
+                <div class="col-md-4 col-12">
+                    <div class="tr-statbox">
+                      <div class="tr-statbox_element" id="activeCRsElement">
+                        <h2 class="number" id="activeCRs">168</h2>
+                        <p>Active CRs</p>
+                        <div class="border-animation" id="activeCRsBorder"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-12">
+                    <div class="tr-statbox">
+                      <div class="tr-statbox_element" id="totalNoticesElement">
+                        <h2 class="number" id="totalNotices">569</h2>
+                        <p>Total Notices</p>
+                        <div class="border-animation" id="totalNoticesBorder"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-12">
+                    <div class="tr-statbox">
+                      <div class="tr-statbox_element" id="filesInLibraryElement">
+                        <h2 class="number" id="filesInLibrary">245</h2>
+                        <p>Files in Library</p>
+                        <div class="border-animation" id="filesInLibraryBorder"></div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="tr-advantages">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tr-adtitle">
+                        <h1><span>CR Mate</span> Advantages</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <div class="tr-featurebox">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <p class="a-title">Seamless Notice Sharing</p>
+                            </div>
+                            <div class="row">
+                                <p class="lekha">
+                                    CR Mate offers a streamlined approach to notice sharing. 
+                                    Each type of message, whether it's an academic notice, club 
+                                    announcement, classroom code, or study material, gets its own 
+                                    individual page. CRs can simply fill out a dedicated form for each 
+                                    notice type, and with a click of a button, the notice is uploaded to the Notice Board page.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-12">
+                    <div class="tr-featurebox_middle">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <p class="a-title">Exclusive CR Authority</p>
+                            </div>
+                            <div class="row">
+                                <p class="lekha">
+                                    At CR Mate, we understand the pivotal role of CRs in 
+                                    disseminating information effectively. That's why CRs 
+                                    have exclusive authority to publish and manage notices 
+                                    on the platform. This ensures that only relevant and accurate 
+                                    information is shared with their classmates, enhancing 
+                                    communication within the university community.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-12">
+                    <div class="tr-featurebox">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <p class="a-title">Unique University Code</p>
+                            </div>
+                            <div class="row">
+                                <p class="lekha">
+                                    To maintain the privacy and exclusivity of the notice board, 
+                                    each registered CR is provided with a Unique University Code 
+                                    (UUC). The CRs will share this UUC solely with their fellow 
+                                    classmates. As a result, only students with a valid UUC can 
+                                    access the notices uploaded by their respective CRs. This 
+                                    feature ensures that no one outside their university can view 
+                                    the notices, adding an additional layer of security and 
+                                    confidentiality.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Function to update the number in the "number" element
+        function updateNumber(elementId, count) {
+        document.getElementById(elementId).innerText = count;
+        }
+
+        // Function to animate the border creation
+        function animateBorder(elementId, targetNumber) {
+        const borderAnimation = document.getElementById(`${elementId}Border`);
+        //const borderAnimation = document.getElementById(elementId);
+        borderAnimation.style.display = 'block';
+
+        let startTime;
+        const duration = 3000; // 3 seconds
+
+        function animate(timestamp) {
+            if (!startTime) startTime = timestamp;
+            const progress = timestamp - startTime;
+            const completion = Math.min(progress / duration, 1);
+            const angle = completion * 360;
+
+            borderAnimation.style.border = `conic-gradient(#ff606e 0% ${angle}deg, transparent ${angle}deg 100%)`;
+
+            if (progress < duration) {
+            requestAnimationFrame(animate);
+            } else {
+            // Animation completed, keep the border visible
+            borderAnimation.style.border = `conic-gradient(#ff606e 0% 360deg, transparent 360deg 100%)`;
+            }
+        }
+
+        requestAnimationFrame(animate);
+        }
+
+        // Function to count from 1 to a specific number for each element
+        function countToNumber(elementId, targetNumber) {
+        let count = 1;
+        const interval = setInterval(() => {
+            updateNumber(elementId, count);
+            count++;
+            if (count > targetNumber) {
+            clearInterval(interval); // Stop the counting after reaching the target number
+            }
+        }, 0); // 30 milliseconds for smoother animation
+
+        animateBorder(elementId, targetNumber);
+        }
+
+        // Start counting and animation when the page loads
+        countToNumber("activeCRs", 168);
+        countToNumber("totalNotices", 569); // Example target number for Total Notices
+        countToNumber("filesInLibrary", 245); // Example target number for Files in Library
+
+    </script>
+
+
+</body>
+</html>
